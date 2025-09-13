@@ -161,7 +161,7 @@ header.blur {
 }
 
 
-.items-type li a {
+.items-type > li > a {
     text-decoration: none;
     color: rgb(17, 119, 123);
     font-family: Poppins, sans-serif;
@@ -239,14 +239,14 @@ header.blur {
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease-in-out;
-    overflow-y: scroll;
     /* vertical scroll */
     background: white;
     padding: 2.5rem;
     display: flex;
     gap: 12px;
-
+    overflow-y: auto;
     z-index: 1000;
+    height: 350px;
 }
 
 .main-link:hover .cards-wrapper-mega-menu {
@@ -264,7 +264,7 @@ header.blur {
     text-align: center;
     text-decoration: none;
     flex: 1;
-   
+    height: 370px;
     padding: 10px 10px 50px 10px;
 } 
 
@@ -380,12 +380,15 @@ text-align: center;
 }
 
 .card-wrpper-container{
-    height: 250px;
-    overflow-y: auto;
+   
+    display: flex;
+    gap: 10px;
 }
 
 
-
+.card-wrpper-containe > a{
+    flex: 0 0 calc(25% - 10px);
+}
 
 
 
