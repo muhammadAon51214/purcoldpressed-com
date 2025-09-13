@@ -379,7 +379,10 @@ color: rgb(12, 65, 67);
 text-align: center;
 }
 
-
+.card-wrpper-container{
+    height: 250px;
+    overflow-y: auto;
+}
 
 
 
