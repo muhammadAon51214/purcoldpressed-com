@@ -396,7 +396,22 @@ text-align: center;
     align-items: center;
     padding-top: 30px;
     gap: 25px;
-    border-bottom: 2px solid black;
+}
+.cold-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 25%;
+   position: relative;
+}
+.cold-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
 }
 
 
