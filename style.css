@@ -390,7 +390,14 @@ text-align: center;
     flex: 0 0 calc(25% - 10px);
 }
 
-
+.Cold-Pressed-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 25px;
+    border-bottom: 2px solid black;
+}
 
 
 
