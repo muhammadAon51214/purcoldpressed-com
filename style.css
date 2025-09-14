@@ -441,7 +441,6 @@ text-align: center;
   }
   .card--2 .media a{
     display:block;
-    border-radius:10px;
     overflow:hidden;
     text-decoration:none;
   }
