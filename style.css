@@ -367,7 +367,8 @@ header.blur {
 /* section-tow */
 .section-two{
     padding:60px 48px 144px;
-    background-color: aqua;
+    background-color: #f6f0f0;
+    
 }
 
 .Cold-Pressed{
@@ -408,12 +409,119 @@ text-align: center;
 .cold-container::after{
     content: "";
     position: absolute;
-    bottom: -7px;
+    bottom: -10px;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #f5f5f5;
 }
+
+
+.maincold-pressed{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+ 
+
+/* card wrapper */
+.card--2{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+  }
+
+  /* image area */
+  .card--2 .media {
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .card--2 .media a{
+    display:block;
+    overflow:hidden;
+    text-decoration:none;
+  }
+  .card--2 .media img{
+    display:block;
+    width:100%; /* constrained width for neat crop */
+    object-fit:cover;
+    display:block;
+  }
+
+  /* content */
+  .card--2 .content{
+    padding:18px 18px 20px 18px;
+    /* text-align:center; */
+  }
+  .card--2 h3{
+    margin:4px 0 8px 0;
+    font-weight:700;
+    letter-spacing:0.1px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25.5px;
+    color: rgb(12, 65, 67) ;
+
+
+
+  }
+  .card--2 p.desc{
+    margin:0 auto 14px auto;
+    line-height:1.45;
+    overflow:hidden;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(28, 27, 27);
+
+
+
+  }
+
+  /* rating / reviews row */
+  .meta{
+    display:flex;
+    align-items:center;
+    /* justify-content:center; */
+    gap:8px;
+    margin-bottom:12px;
+  }
+  .stars{
+    display:inline-flex;
+    gap:4px;
+    align-items:center;
+    color: #11806e;
+    font-weight:700;
+  }
+  .reviews{
+    font-size:13px;
+    color:var(--teal);
+    text-decoration:underline;
+  }
+
+  .price{
+    font-weight:700;
+    color:#0d3b38;
+    margin-top:6px;
+    font-size:16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
