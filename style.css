@@ -729,6 +729,11 @@ padding: 20px 10px 20px 10px;
     background-color: #11777B;
 }
 
+.Juice-Cleanses-sec2{
+    padding: 60px 48px;
+    background-color: #00A341;
+}
+
 
 .Juice-Cleanses-main{
     display: flex;
@@ -843,3 +848,103 @@ padding-right: 25px;
       }
 
 /* section-5-Juice-Cleanses */
+/* <!-- section-6-Choosing Between Juice --> */
+.Choosing-Between-Juice{
+    padding: 80px 48px;
+   
+    
+}
+
+
+.Choosing-Between-Juice-main{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.comparison-container {
+    max-width: 800px;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+  }
+
+  .comparison-container:active {
+    cursor: grabbing;
+  }
+
+  .image-section {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .left-section {
+    left: 0;
+    background-image: url('Copy_of_Ultimate_Discovery22222'); /* Apni left image ka path */
+  }
+
+  .right-section {
+    right: 0;
+    background-image: url('LEMONADE-DAILY-PACKS-PUR-Brands-LLC-23597411000000000'); /* Apni right image ka path */
+    clip-path: polygon(var(--position, 50%) 0, 100% 0, 100% 100%, var(--position, 50%) 100%);
+  }
+
+  .divider-line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    left: calc(var(--position, 50%) - 2px);
+    transition: left 0.1s ease-out;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  .divider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    z-index: 20;
+  }
+
+  .divider-handle::before {
+    content: '⟷';
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+
+.Cleanse---and--Juicing{
+font-family: "Gazpacho Bold", Barlow, sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 44px;
+color: rgb(12, 65, 67);
+ width: 506px;
+ text-align: center;
+padding-bottom: 50px;
+margin: 0 auto;
+}
+
+
+/* <!-- section-6-Choosing Between Juice --> */
