@@ -367,7 +367,7 @@ header.blur {
 /* section-tow */
 .section-two{
     padding:60px 48px 144px;
-    background-color: #f6f0f0;
+    background-color:#F9F8F4;
     
 }
 
@@ -512,6 +512,212 @@ text-align: center;
 
 
 
+/* section-2 */
+
+/* setion-3-wellness-agenda */
+
+.wellness-agenda{
+ padding: 200px 150px;
+background-color: #A0E9EE;;
+
+}
+
+.wellness-agenda-text p{
+ text-align: center;
+font-family: "Gazpacho Bold";
+font-size: 36px;
+font-weight: 900;
+line-height: normal;
+color: rgb(17, 119, 123);
+}
+
+
+.wellness-agenda-img img{
+width: 100px;
+height: 100px;
+}
+
+.wellness-agenda-img {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.nutrition-boost{
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+
+.nutrition-boost-min{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 35px;
+}
+
+
+.nutrition-boost-1item{
+background-color: #C6EEF2;
+cursor: pointer;
+ padding: 0px 10px 30px 10px;
+ border: 1px solid transparent;
+ box-shadow: 0px 0px 0px 0px #E7F1F2 inset, 0px 0px 0px 1px #E7F1F2;
+ border-radius: 4px;
+}
+
+.nutrition-boost-1item:hover{
+    border: 1px solid rgb(121, 119, 119);
+    background-color: #D0F4F7;
+    transform: scale(0.99);
+    
+}
+
+
+
+
+.boost-img {
+    position: relative;
+    
+}
+
+.boost-img::before{
+    content: "";
+    display: block;
+    position: relative;
+    padding-top: 100%;
+
+}
+
+.boost-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.nutrition-boost-text p{
+font-family: Poppins, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+color: rgb(12, 65, 67);
+text-align: center;
+width: 140px;
+padding: 20px 10px 20px 10px;
+}
+
+
+
+
+/* setion-3-wellness-agenda */
+/* <!-- section-4-From-Farm-Your --> */
+
+.From-Farm-Your-sec{
+    padding: 80px 48px ;
+}
+
+
+.From-Farm-Your-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.From-Farm-Your-img > a > img{
+    width: 530px;
+}
+
+
+
+.content-section {
+    text-align: center;
+    padding: 72px 48px;
+    border-radius: 20px;
+   
+}
+
+.brand-tagline {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2C7A7B;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.content-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.highlight-text {
+    color: #2C7A7B;
+    font-weight: 600;
+}
+
+.call-to-action-section {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.experience-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sparkle-icon {
+    color: #FFA500;
+    font-size: 16px;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+    text-transform: none;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 165, 0, 0.4);
+    background: linear-gradient(135deg, #FF8C00 0%, #FF7F00 100%);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
 
 
 
@@ -529,4 +735,5 @@ text-align: center;
 
 
 
-/*  */
+
+/* <!-- section-4-From-Farm-Your --> */
