@@ -23,7 +23,7 @@ li {
     padding: 15px 0px 15px;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 10000;
 }
 
 .announcement-bar__scrolling-list {
@@ -124,17 +124,38 @@ li {
     width: 100%;
     position: absolute;
     top: 45px;
-    z-index: 1;
-    transition: backdrop-filter 0.3s, background 0.3s;
-
-
-}
-
-header.blur {
+    z-index: 1000;
+    transition: all 0.3s ease; /* smooth effect */
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  /* Sticky + blur ke liye extra class */
+  #header.sticky {
+    position: sticky;
+    top: 0;
     backdrop-filter: blur(4px);
-    /* blur effect */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding-bottom: 3.5rem;
+  }
+  
 
-}
+  #header.sticky nav {
+    margin-top: 40px;  /* ya padding-top: 10px; */
+    transition: margin-top 0.3s ease;
+  }
+
+
+  .main-link:hover ~ #header,
+  .main-link:hover #header {
+    background: rgba(255, 255, 255, 0.9); /* jo color chaho */
+  }
+
+  #header.menu-open {
+    background: #F0F0F0; /* ya jo color chaho */
+  }
+
+
 
 
 
