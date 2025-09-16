@@ -28,9 +28,62 @@ window.addEventListener("scroll", checkHeader);
     });
     }
 
+// section-8---Amazing
 
+const testimonials = [
+    {
+      quote: "Amazing! All the juices were delicious! It made the 3 day cleanse so easy. I plan to do it again!",
+      author: "Debbie S."
+    },
+    {
+      quote: "The cleanse was tasty and effortless. Highly recommend!",
+      author: "Alex R."
+    },
+    {
+      quote: "I feel refreshed and light. The juices were delicious!",
+      author: "Maria T."
+    }
+  ];
 
+  const quoteEl = document.getElementById("muja-quote");
+  const authorEl = document.getElementById("muja-author");
+  const dots = document.querySelectorAll(".muja-dot");
+  const nextBtn = document.getElementById("muja-next");
+  const prevBtn = document.getElementById("muja-prev");
 
+  let current = 0;
+
+  function showTestimonial(index) {
+    quoteEl.classList.add("fade-out");
+    authorEl.classList.add("fade-out");
+
+    setTimeout(() => {
+      quoteEl.textContent = testimonials[index].quote;
+      authorEl.textContent = testimonials[index].author;
+
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+
+      quoteEl.classList.remove("fade-out");
+      authorEl.classList.remove("fade-out");
+    }, 500); // animation duration
+  }
+
+  nextBtn.addEventListener("click", () => {
+    current = (current + 1) % testimonials.length;
+    showTestimonial(current);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    current = (current - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(current);
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      current = index;
+      showTestimonial(current);
+    });
+  });
 
 
 

@@ -1022,3 +1022,98 @@ margin: 0 auto;
 
 
 /* <!-- section-6-Choosing Between Juice --> */
+/* Amazing-sec-8---- */
+.muja-testimonial-section {
+    background-color: #a8ebf2;
+    color: #002d2d;
+    text-align: center;
+    padding: 80px 48px;
+    position: relative;
+  }
+
+  .muja-stars {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+
+  .muja-author {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    font-family: "Gazpacho Bold", Barlow, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 38.4px;
+     color: rgb(12, 65, 67);
+  }
+
+
+  .muja-quote{
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    font-family: "Gazpacho Bold", Barlow, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+     color: rgb(12, 65, 67);
+  }
+
+
+
+
+
+
+  .fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  /* Controls */
+  .muja-controls-wrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .muja-nav-btn {
+    background-color: #ffffff;
+    border: none;
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 12px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .muja-nav-btn:hover {
+    background-color: #d0eef1;
+  }
+
+  .muja-pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .muja-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #b3e4eb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .muja-dot.active {
+    background-color: #00363a;
+  }
+
+
+
+
+
+/* Amazing-sec---8--- */
