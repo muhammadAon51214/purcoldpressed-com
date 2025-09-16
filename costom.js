@@ -135,3 +135,17 @@ const testimonials = [
 
     // Initialize
     updatePosition(50);
+
+
+
+
+
+    // section-bottles-----
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 6,   // ek bar me 6 bottles
+        spaceBetween: 20,   // bottles ke darmiyan gap
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
