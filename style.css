@@ -1114,7 +1114,12 @@ margin: 0 auto;
 
 
 
-
+.muja-testimonial-----f{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
 
 /* Amazing-sec---8--- */
 
@@ -1399,4 +1404,105 @@ gap: 30px;
     background-color: orange;
     border-radius: 10px;
     text-align: center;
+  }
+
+
+  /* <!-- section---10---- --> */
+  .PUR---Juicy---News--sec{
+    padding: 0px 48px 80px;
+  }
+
+  .juicy-news-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+
+  /* Header */
+  .juicy-news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .juicy-news-header h2 {
+     margin: 0;
+     font-family: "Gazpacho Bold", Barlow, sans-serif;
+     font-size: 48px;
+      font-weight: 700;
+    line-height: 52.8px;
+    color: rgb(17, 119, 123);
+
+
+  }
+
+  .juicy-viewall {
+    font-size: 14px;
+    color: #007070;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .juicy-viewall:hover {
+    text-decoration: underline;
+  }
+
+  /* Grid */
+  .juicy-news-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 25px;
+  }
+
+  /* Card */
+  .juicy-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .juicy-card a {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .juicy-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out; /* smooth effect */
+    display: block;
+  }
+
+  .juicy-card a:hover img {
+    transform: scale(1.08); /* zoom only image */
+  }
+
+  .juicy-card-content {
+    padding: 12px 0 0;
+    text-align: left;
+  }
+
+  .juicy-card-content h3 {
+    margin: 8px 0;
+    font-family: "Gazpacho Bold", Barlow, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+     line-height: 43.2px;
+    color: rgb(12, 65, 67);
+  }
+
+  .juicy-card-content p {
+    font-size: 17px;
+    color: #444;
+    margin: 0;
+    line-height: 1.5;
   }
