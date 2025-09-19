@@ -1584,3 +1584,133 @@ gap: 30px;
     font-size: 12px;
     color: #444;
   }
+
+  /* mreeq---- */
+  .unique-marquee-section {
+    padding: 60px 0px 136px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .unique-marquee-text {
+    display: inline-block;
+    padding-left: 100%; /* start from right */
+    animation: unique-marquee-scroll 25s linear infinite;
+    font-size: 80px;
+    font-family: "Gazpacho Bold", "Barlow", sans-serif; /* ✅ custom font */
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #00c6ff); /* 3 colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  @keyframes unique-marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* footer--- */
+
+.unique-footer {
+    background-color: #006d6f;
+    /* same bg */
+    color: #fff;
+    padding: 50px 20px 50px;
+}
+
+.unique-footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo & Newsletter */
+.unique-footer-logo-newsletter h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    width: 250px;
+    color: white;
+}
+
+.unique-footer-logo-newsletter p {
+    margin: 0 0 10px;
+}
+
+.unique-footer-form {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 280px;
+}
+
+.unique-footer-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.unique-footer-form button {
+    background: #004c4d;
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Columns */
+.unique-footer-column h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.unique-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.unique-footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.unique-footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.unique-footer-column ul li a:hover {
+    opacity: 0.8;
+}
+
+.social-media-bootm > li > a > img{
+width: 25px;
+}
+
+.footer__aside-top{
+display: flex;
+}
+
+.social-media-bootm{
+display: flex;
+gap: 15px;
+}
