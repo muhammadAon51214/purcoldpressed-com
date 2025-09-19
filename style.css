@@ -1625,7 +1625,7 @@ gap: 30px;
     background-color: #006d6f;
     /* same bg */
     color: #fff;
-    padding: 50px 20px 50px;
+    padding: 50px 30px 50px;
 }
 
 .unique-footer-container {
@@ -1681,11 +1681,7 @@ gap: 30px;
     font-weight: 700;
 }
 
-.unique-footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 
 .unique-footer-column ul li {
     margin-bottom: 10px;
