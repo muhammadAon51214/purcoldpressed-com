@@ -1712,23 +1712,52 @@ display: flex;
 gap: 15px;
 }
 
-
-
-/* respo--------------------- */
-
-
-@media (max-width: 1440px) {
-   
-
-
-
+/* --------- */
+.menu-butn > a > svg {
+    width: 25px;
+    color: rgb(17, 119, 123);
+    display: none;
 }
 
 
 
 
 
+
+/* respo--------------------- */
+
+
+
 @media (max-width: 1024px) {
+
+    .items-type{
+        display: none;
+    }
+
+     
+    .subscriber-btn{
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .Juice-Cleanses-main{
+        flex-direction: column;
+    }
+
+
+    .menu-butn > a > svg {
+        display: block;
+    }
+
+
+    .logo-box{
+        position: absolute;
+        left: 50%;
+    }
+
 
 
 
