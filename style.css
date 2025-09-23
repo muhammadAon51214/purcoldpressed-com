@@ -24,6 +24,7 @@ li {
     position: sticky;
     top: 0;
     z-index: 10000;
+    overflow: hidden;
 }
 
 .announcement-bar__scrolling-list {
@@ -1717,9 +1718,7 @@ gap: 15px;
 
 
 @media (max-width: 1440px) {
-    .annument-bar{
-        overflow: hidden;
-    }
+   
 
 
 
