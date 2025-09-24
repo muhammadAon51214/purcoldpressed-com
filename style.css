@@ -501,7 +501,7 @@ text-align: center;
 
 /* card wrapper */
 .card--2{
-    width:250px;
+    flex: 0 0 20%;
     background:white;
     border-radius:10px;
     overflow:hidden;
@@ -1741,6 +1741,7 @@ gap: 15px;
 
     .hero-title {
         font-size: 30px;
+       
     }
 
     .Juice-Cleanses-main{
@@ -1753,20 +1754,117 @@ gap: 15px;
     }
 
 
+    .items-box {
+        flex: none;
+    }
+
     .logo-box{
-        position: absolute;
-        left: 50%;
+    flex: 1;
+    text-align: center;
+    padding-left: 124px;
+    }
+
+    .cold-container{
+        flex: 0 0 30%;
     }
 
 
+    .main-title{
+        font-size: 35px;
+    }
+
+    .prose-juice-h4{
+        text-align: left;
+    }
+
+    .prose p{
+        max-width: 707px;
+    }
 
 
+    .Cleanse---and--Juicing{
+        width: 725px;
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .juicy-news-header h2{
+        font-size: 35px;
+    }
+
+    .juicy-card-content h3{
+        font-size: 20px;
+    }
+
+    .planet-recipe-title{
+        font-size: 35px;
+    }
+
+    .main-brand-title{
+        font-size: 35px;
+    }
 
 }
 
 
 
 @media (max-width: 768px) {
+
+
+    .center-bottle-section{
+        display: none;
+    }
+
+    .banar-img::after {
+        padding-top: 55.85%;
+    }
+
+    .hero-btn{
+        padding: 14px 14px;
+    }
+
+    .cold-container{
+        flex: 0 0 42%;
+    }
+    
+    .From-Farm-Your-main{
+        flex-direction: column;
+    }
+
+    .feature-chart{
+        width: 670px;
+    }
+
+    .Cleanse---and--Juicing {
+        width: 550px;
+    }
+
+    .swiper-slide img{
+        width: 100px;
+    }
+
+
+    .card--2 {
+        overflow:visible
+    }
+
+
+    .maincold-pressed{
+        overflow-x: auto;
+    }
+
+
+    .card--2{
+        flex: 0 0 33%;
+    }
+
+
+
+
+
 
 
 
