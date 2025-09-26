@@ -91,6 +91,11 @@ li {
 
 }
 
+
+
+
+
+
 .banar-img::after {
     content: "";
     display: block;
@@ -110,6 +115,18 @@ li {
 .banar-sec {
     position: relative;
 }
+
+
+.banar-img img:nth-child(1) {
+    display: block !important;
+}
+
+.banar-img img:nth-child(2) {
+    display: none;
+}
+
+
+
 
 
 
@@ -1874,6 +1891,222 @@ gap: 15px;
 
 
 @media (max-width: 480px) {
+
+    .banar-img img:nth-child(1) {
+        display: none;
+    }
+
+    .banar-img img:nth-child(2) {
+        display: block !important;
+    }
+
+    .nutrition-boost-min {
+        flex-wrap: wrap;
+    }
+
+    .From-Farm-Your-img > a > img{
+        width: 400px;
+    }
+
+    .feature-chart {
+        width: 350px;
+    }
+
+
+    .Cleanse---and--Juicing {
+        width: 400px;
+    }
+
+
+
+    .sustainability-content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card--2 {
+        flex: 0 0 49%;
+    }
+
+
+    .swiper-slide {
+        flex: 0 0 33%;
+    }
+
+    .newsletter-section{
+        flex-direction: column;
+    }
+
+    .hero-juice{
+        bottom: 35%;
+    }
+
+    .banar-img::after{
+        padding-top: 140.85%;
+    }
+
+
+    #header.sticky{
+        padding-bottom: 1rem;
+    }
+
+    .hero-title {
+        font-size: 25px;
+    }
+
+
+    .hero-tagline {
+        font-size: 15px;
+    }
+
+    .hero-btn-group{
+        flex-direction: column;
+        width: 350px;
+    }
+
+
+    .Cold-Pressed {
+        font-size: 1.5rem;
+    }
+
+
+    .cold-container {
+        flex: 0 0 75%;
+    }
+
+    .card--2 h3 {
+        font-size: 15px;
+    }
+
+    .card--2 p.desc{
+        font-size: 13px;
+    }
+    
+
+    .stars{
+        font-size: 13px;
+    }
+
+    .stars{
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+
+    .wellness-agenda-text p{
+        font-size: 20px;
+    }
+
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .content-text {
+        font-size: 15px;
+    }
+
+
+    .prose-juice-h4 {
+        font-size: 2rem;
+    }
+
+    .Cold-h3-Pressed {
+        font-size: 2rem;
+    }
+
+
+    .prose p{
+        font-size: 15px;
+    }
+
+    .Try-h3-Juice {
+        font-size: 2rem;
+    }
+
+    .Juice-Cleanses--items li {
+        font-size: 0.8rem;
+        line-height: 20.2px;
+    }
+
+
+    .shop--jice-btn{
+        font-size: 0.8375rem;
+    }
+
+    .Juice-Cleanses-main{
+        align-items: center;
+    }
+
+
+    .feature-title{
+        font-size: 0.8rem;
+    }
+
+    .feature-item{
+        flex-direction: column;
+    }
+
+
+    .Cleanse---and--Juicing {
+       
+        font-size: 25px;
+    }
+
+    .comparison-container {
+        height: 400px;
+    }
+
+
+    .muja-quote {
+        font-size: 20px;
+    }
+
+    .main-brand-title {
+        font-size: 30px;
+    }
+
+
+    .brand-description-block{
+        font-size: 15px;
+    }
+
+    .planet-recipe-title {
+        font-size: 30px;
+    }
+
+
+    .feature-heading {
+        font-size: 15px;
+
+    }
+
+
+    .feature-description{
+        font-size: 13px;
+    }
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    .Browse-our--Cold button {
+        font-size: 0.8375rem;
+    }
+
+
+
+    .juicy-news-header h2 {
+        font-size: 30px;
+    }
+
+
 
 
 
