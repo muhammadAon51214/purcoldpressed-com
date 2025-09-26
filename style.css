@@ -2106,8 +2106,9 @@ gap: 15px;
         font-size: 30px;
     }
 
-
-
+    .unique-footer-container {
+        grid-template-columns: 1fr;
+    }
 
 
 
