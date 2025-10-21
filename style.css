@@ -7,7 +7,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: Poppins, sans-serif;
+    font-family: 'GazpachoHeavy', sans-serif;
     
     
 
@@ -16,6 +16,18 @@ body {
 li {
     list-style: none;
 }
+
+
+
+
+@font-face {
+    font-family: 'GazpachoHeavy';
+    src: url('Gazpacho_Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 
 
 .annument-bar {
@@ -213,10 +225,13 @@ li {
   }
 
   /* Line animation */
-  .dropdown-content ul li::after {
+  .dropdown-content ul li a{
+    position: relative;
+  }
+  .dropdown-content ul li a::after {
     content: "";
     position: absolute;
-    bottom: 6px;
+    bottom: -4px;
     left: 0;
     width: 0;
     height: 1px;
@@ -224,12 +239,27 @@ li {
     transition: width 0.3s ease;
   }
 
-  .dropdown-content ul li:hover::after {
+  .dropdown-content ul li:hover a::after {
     width: 100%;
   }
-
-  
-
+  .targat-options.active::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -5px;
+    /* transform: translateX(-50%); */
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+  }
+  .targat-options.active{
+    position: relative;
+  }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 
 .logo-box a img {
@@ -338,7 +368,7 @@ li {
     gap: 12px;
     overflow-y: auto;
     z-index: 1000;
-    height: 350px;
+    height: 100vh;
 }
 
 .main-link:hover .cards-wrapper-mega-menu {
@@ -497,6 +527,7 @@ text-align: center;
     align-items: center;
     flex: 0 0 25%;
    position: relative;
+   cursor: pointer;
 }
 .cold-container::after{
     content: "";

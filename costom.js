@@ -149,3 +149,31 @@ const testimonials = [
           prevEl: '.swiper-button-prev',
         },
       });
+
+
+
+
+      const options = document.querySelectorAll('.targat-options');
+      const cards = document.querySelectorAll('.card--2');
+    
+      // ✅ Default show first card only
+      const firstTarget = options[0].getAttribute('data-targat');
+      cards.forEach(card => {
+        card.style.display = card.getAttribute('data-card') === firstTarget ? 'block' : 'none';
+      });
+    
+      // ✅ On click event
+      options.forEach(option => {
+        option.addEventListener('click', () => {
+          const target = option.getAttribute('data-targat');
+    
+          // Remove active from all and add to clicked
+          options.forEach(o => o.classList.remove('active'));
+          option.classList.add('active');
+    
+          // Show matching card only
+          cards.forEach(card => {
+            card.style.display = (card.getAttribute('data-card') === target) ? 'block' : 'none';
+          });
+        });
+      });
