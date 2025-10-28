@@ -7,7 +7,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'GazpachoHeavy', sans-serif;
+    font-family: 'GazpachoHeavy';
     
     
 
@@ -67,7 +67,7 @@ li {
 .text-xs {
     font-size: 0.8125rem;
     font-weight: bold;
-    font-family: Poppins, sans-serif;
+   
 
 }
 
@@ -286,7 +286,6 @@ a{
 .items-type > li > a {
     text-decoration: none;
     color: rgb(17, 119, 123);
-    font-family: Poppins, sans-serif;
     font-weight: 700;
     line-height: 27.2px;
     font-size: 1.2rem;
@@ -320,7 +319,6 @@ a{
     color: white;
     text-decoration: none;
     background-color: orange;
-    font-family: Poppins, sans-serif;
     padding: 13px;
     border-radius: 8px;
     font-size: 1rem;
@@ -449,7 +447,6 @@ a{
     font-weight: bold;
     margin-bottom: 20px;
     color: rgb(17, 119, 123);
-    font-family: "Gazpacho Bold", "DIN Next", sans-serif;
 }
 
 .hero-tagline {
@@ -457,7 +454,6 @@ a{
     font-weight: 600;
     color: white;
     margin-bottom: 40px;
-    font-family: "Gazpacho Bold", "DIN Next", sans-serif;
 }
 
 .hero-btn-group {
@@ -477,7 +473,6 @@ a{
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: "Gazpacho Bold", "DIN Next", sans-serif;
 }
 
 .hero-btn:hover {
@@ -494,7 +489,6 @@ a{
 }
 
 .Cold-Pressed{
-font-family: "Gazpacho Bold", Barlow, sans-serif;
 font-size: 2rem;
 font-weight: 700;
 line-height: 38.4px;
@@ -543,13 +537,17 @@ text-align: center;
     display: flex;
     gap: 10px;
     padding-top: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none; 
 }
-
+.maincold-pressed::-webkit-scrollbar {
+    display: none;
+  }
  
 
 /* card wrapper */
 .card--2{
-    flex: 0 0 20%;
+    flex: 0 0 22%;
     background:white;
     border-radius:10px;
     overflow:hidden;
@@ -605,6 +603,24 @@ text-align: center;
 
   }
 
+  .card--2 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .card--2.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  
+  
+
+
+
+
+
   /* rating / reviews row */
   .meta{
     display:flex;
@@ -647,7 +663,6 @@ background-color: #A0E9EE;;
 
 .wellness-agenda-text p{
  text-align: center;
-font-family: "Gazpacho Bold";
 font-size: 36px;
 font-weight: 900;
 line-height: normal;
@@ -726,7 +741,6 @@ cursor: pointer;
 
 
 .nutrition-boost-text p{
-font-family: Poppins, sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 19px;
@@ -867,7 +881,6 @@ padding: 20px 10px 20px 10px;
 .prose-juice-h4{
     font-size: 3rem;
     line-height: 1.1;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
    font-weight: 700;
    color: rgb(255, 255, 255);
 }
@@ -876,13 +889,11 @@ padding: 20px 10px 20px 10px;
     font-size: 2.25rem;
     line-height: 1.2;
     margin-top: 2rem;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
    font-weight: 700;
    color: rgb(255, 255, 255);
 }
 
 .prose p{
-font-family: Poppins, sans-serif;
 font-size: 17px;
 font-weight: 700;
 line-height: 27.2px;
@@ -893,7 +904,6 @@ margin-top: 24px;
 .Try-h3-Juice{
     font-size: 2.25rem;
     line-height: 1.2;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
     font-weight: 700;
    color: rgb(255, 255, 255);
    margin-top: 24px;
@@ -910,7 +920,6 @@ margin-top: 24px;
 }
 
 .Juice-Cleanses--items li{
-font-family: Poppins, sans-serif;
 font-size: 1rem;
 font-weight: 400;
 line-height: 27.2px;
@@ -1058,7 +1067,6 @@ padding-right: 25px;
   }
 
 .Cleanse---and--Juicing{
-font-family: "Gazpacho Bold", Barlow, sans-serif;
 font-size: 40px;
 font-weight: 700;
 line-height: 44px;
@@ -1089,7 +1097,6 @@ margin: 0 auto;
 
   .muja-author {
     transition: opacity 0.5s ease, transform 0.5s ease;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 38.4px;
@@ -1099,7 +1106,6 @@ margin: 0 auto;
 
   .muja-quote{
     transition: opacity 0.5s ease, transform 0.5s ease;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -1390,7 +1396,6 @@ gap: 30px;
 
    h2 {
     margin-bottom: 30px;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 52.8px;
@@ -1475,7 +1480,6 @@ gap: 30px;
 
   .juicy-news-header h2 {
      margin: 0;
-     font-family: "Gazpacho Bold", Barlow, sans-serif;
      font-size: 48px;
       font-weight: 700;
     line-height: 52.8px;
@@ -1540,7 +1544,6 @@ gap: 30px;
 
   .juicy-card-content h3 {
     margin: 8px 0;
-    font-family: "Gazpacho Bold", Barlow, sans-serif;
     font-size: 30px;
     font-weight: 700;
      line-height: 43.2px;
@@ -1647,7 +1650,6 @@ gap: 30px;
     padding-left: 100%; /* start from right */
     animation: unique-marquee-scroll 25s linear infinite;
     font-size: 80px;
-    font-family: "Gazpacho Bold", "Barlow", sans-serif; /* ✅ custom font */
     font-weight: 700;
     letter-spacing: 2px;
     background: linear-gradient(90deg, #ff5f6d, #ffc371, #00c6ff); /* 3 colors */

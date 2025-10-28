@@ -153,27 +153,68 @@ const testimonials = [
 
 
 
+      // const options = document.querySelectorAll('.targat-options');
+      // const cards = document.querySelectorAll('.card--2');
+    
+      // // ✅ Default show first card only
+      // const firstTarget = options[0].getAttribute('data-targat');
+      // cards.forEach(card => {
+      //   card.style.display = card.getAttribute('data-card') === firstTarget ? 'block' : 'none';
+      // });
+    
+      // // ✅ On click event
+      // options.forEach(option => {
+      //   option.addEventListener('click', () => {
+      //     const target = option.getAttribute('data-targat');
+    
+      //     // Remove active from all and add to clicked
+      //     options.forEach(o => o.classList.remove('active'));
+      //     option.classList.add('active');
+    
+      //     // Show matching card only
+      //     cards.forEach(card => {
+      //       card.style.display = (card.getAttribute('data-card') === target) ? 'block' : 'none';
+      //     });
+      //   });
+      // });
+
       const options = document.querySelectorAll('.targat-options');
-      const cards = document.querySelectorAll('.card--2');
-    
-      // ✅ Default show first card only
-      const firstTarget = options[0].getAttribute('data-targat');
+const cards = document.querySelectorAll('.card--2');
+
+// ✅ Default show first
+const firstTarget = options[0].getAttribute('data-targat');
+options[0].classList.add('active');
+cards.forEach(card => {
+  if (card.getAttribute('data-card') === firstTarget) {
+    card.classList.add('show');
+  }
+});
+
+// ✅ On click
+options.forEach(option => {
+  option.addEventListener('click', () => {
+    const target = option.getAttribute('data-targat');
+
+    // Remove active class
+    options.forEach(o => o.classList.remove('active'));
+    option.classList.add('active');
+
+    // Hide all cards smoothly
+    cards.forEach(card => {
+      card.classList.remove('show');
+      setTimeout(() => {
+        card.style.display = 'none';
+      }, 500); // same as transition duration
+    });
+
+    // Add small delay before showing new card
+    setTimeout(() => {
       cards.forEach(card => {
-        card.style.display = card.getAttribute('data-card') === firstTarget ? 'block' : 'none';
+        if (card.getAttribute('data-card') === target) {
+          card.style.display = 'block';
+          setTimeout(() => card.classList.add('show'), 10);
+        }
       });
-    
-      // ✅ On click event
-      options.forEach(option => {
-        option.addEventListener('click', () => {
-          const target = option.getAttribute('data-targat');
-    
-          // Remove active from all and add to clicked
-          options.forEach(o => o.classList.remove('active'));
-          option.classList.add('active');
-    
-          // Show matching card only
-          cards.forEach(card => {
-            card.style.display = (card.getAttribute('data-card') === target) ? 'block' : 'none';
-          });
-        });
-      });
+    }, 500);
+  });
+});
